@@ -1,0 +1,36 @@
+========================================================================================================================
+Cách 1: Lấy từ Network Tab (nhanh và phổ biến nhất)
+Mở Discord trong trình duyệt web (không dùng app desktop) và đăng nhập .
+
+Nhấn F12 để mở Developer Tools, chuyển sang tab Network.
+
+Gửi 1 tin nhắn bất kỳ hoặc tải lại trang (F5).
+
+Trong danh sách request, tìm và bấm vào request tên messages, science, hoặc library .
+
+Trong phần Headers, kéo xuống mục Request Headers, tìm dòng authorization. Giá trị bên cạnh chính là User Token của mày .
+========================================================================================================================
+
+
+Cách 2: Lấy từ Console (copy-paste code)
+Mở Discord trong trình duyệt, nhấn F12 và chuyển sang tab Console .
+
+Copy và paste dòng code dưới đây vào Console, rồi nhấn Enter :
+
+javascript
+(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()
+Token sẽ hiện ra hoặc tự động copy vào clipboard của mày .
+
+Gõ chữ: allow pasting để tắt block của google
+
+
+========================================================================================================================
+Cách 3: Lấy từ Local Storage
+Mở Discord trong trình duyệt, bật Developer Tools (F12).
+
+Chuyển sang tab Application.
+
+Bên trái, mở mục Local Storage -> https://discord.com .
+
+Tìm key có tên token, giá trị của nó chính là token .
+========================================================================================================================
