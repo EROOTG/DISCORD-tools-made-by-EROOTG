@@ -25,3 +25,22 @@ Minimal dependencies, maximum performance. Designed for security research and au
 git clone https://github.com/EROOTG/DISCORD-tools-made-by-EROOTG.git
 cd DISCORD-tools-made-by-EROOTG
 pip install -r requirements.txt
+Execution
+Windows: Double-click run.bat or run:
+
+bash
+python webhook.py
+Linux/macOS:
+
+bash
+python3 webhook.py
+⚙️ CONFIGURATION
+File	Purpose
+webhook.py	Core logic – webhook creation, deletion, log
+requirements.txt	Dependencies (requests, etc.)
+run.bat	Launcher with environment checks
+HOW TO GET TOKEN.txt	Token extraction guide (read carefully)
+📄 DOCUMENTATION
+Token Usage: See HOW TO GET TOKEN.txt for step-by-step instructions.
+
+Webhook API: Refer to inline comments in webhook.py.
